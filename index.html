@@ -5,57 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Éderson dos Santos da Silva | Desenvolvedor de Sistemas Logísticos</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
-    header { background: linear-gradient(135deg, #1e40af, #3b82f6); padding: 4rem 0; text-align: center; }
+    body { 
+      font-family: 'Segoe UI', system-ui, sans-serif; 
+      margin: 0; 
+      background: #0f172a; 
+      color: #e2e8f0; 
+      line-height: 1.6;
+    }
+    header { 
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6); 
+      padding: 5rem 0; 
+      text-align: center; 
+    }
     .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
     h1 { font-size: 2.8rem; margin: 0; }
     h2 { color: #60a5fa; border-bottom: 2px solid #334155; padding-bottom: 10px; }
-    .card { background: #1e2937; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+    .card { 
+      background: #1e2937; 
+      border-radius: 12px; 
+      padding: 1.8rem; 
+      margin: 1.5rem 0; 
+      box-shadow: 0 10px 15px rgba(0,0,0,0.3); 
+    }
     .highlight { color: #60a5fa; font-weight: bold; }
-    ul { line-height: 1.8; }
-    .btn { background: #3b82f6; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 1rem; }
+    .btn { 
+      background: #3b82f6; 
+      color: white; 
+      padding: 12px 28px; 
+      text-decoration: none; 
+      border-radius: 8px; 
+      display: inline-block; 
+      margin-top: 1rem; 
+      font-weight: 500;
+    }
+    .btn-secondary {
+      background: #475569;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Éderson dos Santos da Silva</h1>
-      <p style="font-size: 1.4rem; margin-top: 10px;">Desenvolvedor de Sistemas Logísticos & Automação</p>
+      <p style="font-size: 1.5rem; margin-top: 12px;">Desenvolvedor de Sistemas Logísticos & Automação</p>
+      <p>Especialista em criar soluções práticas onde os sistemas corporativos falham.</p>
     </div>
   </header>
 
   <div class="container">
     <h2>Sobre Mim</h2>
-    <p>Funcionário dos Correios com mais de 15 anos de experiência operacional. Desenvolvedor autodidata que criou o <strong class="highlight">ATLAS</strong>, um sistema de automação logística que monitora o Rio Grande do Sul inteiro, resolvendo problemas que os sistemas oficiais não conseguem.</p>
+    <p>Funcionário dos Correios há mais de 15 anos, comecei como carteiro e hoje atuo na GPLAQ (Gerência de Planejamento e Qualidade) do CTCE Porto Alegre. Desenvolvedor autodidata que criou sistemas que resolvem problemas reais de logística e qualidade que os sistemas oficiais não conseguem.</p>
 
     <h2>Principais Projetos</h2>
 
     <div class="card">
       <h3>ATLAS - Automação Total em Logística e Soluções</h3>
-      <p><strong>Principal Projeto</strong> | 2022 - Atual</p>
-      <p>Sistema completo de automação e inteligência operacional desenvolvido para o CTCE Porto Alegre / RS.</p>
+      <p><strong>2022 - Atual</strong> | Principal Projeto</p>
+      <p>Sistema completo de automação e inteligência operacional para o Rio Grande do Sul. Composto por <strong>11 robôs</strong> sincronizados que monitoram produtividade, qualidade, fraudes e fluxo logístico em tempo real.</p>
       <ul>
-        <li>11 robôs sincronizados trabalhando em conjunto</li>
-        <li>Monitoramento em tempo real de produtividade, qualidade e fraudes</li>
+        <li>Pesquisa por CEP (utilizado pela Segurança para objetos sem código)</li>
         <li>Gerenciamento de Unitizadores e Mal Encaminhados</li>
-        <li>Painéis de Rejeitos e Induções das máquinas de triagem</li>
-        <li>Pesquisa por CEP para área de Segurança</li>
-        <li>Controle de Atividades de Distribuição</li>
+        <li>Controle de Atividades de Distribuição em tempo real</li>
+        <li>Painéis de Induções e Rejeitos das máquinas de triagem</li>
+        <li>Monitoramento de OTU e Descumprimento de Guia</li>
       </ul>
       <p><strong>Impacto:</strong> Detectou mais de 57 mil encomendas irregulares em apenas 10 dias.</p>
     </div>
 
     <div class="card">
-      <h3>GED - Guia de Expedição Digital</h3>
-      <p><strong>2021</strong></p>
-      <p>Sistema que substituiu PDFs manuais e padronizou a geração de rótulos de contêineres em todo o Rio Grande do Sul. Ainda em uso ativo 5 anos depois, mesmo após implantação do sistema oficial de Brasília.</p>
+      <h3>RADAR Tracker</h3>
+      <p><strong>2020 - 2022</strong> | Antecessor do ATLAS</p>
+      <p>Primeiro grande sistema de rastreamento e detecção de extravios/mal encaminhados. Processava mais de <strong>2,5 milhões de objetos por mês</strong> usando apenas 3 computadores antigos que seriam descartados.</p>
+      <p>Foi a base técnica e conceitual que evoluiu para o ATLAS atual.</p>
     </div>
 
     <h2>Tecnologias</h2>
-    <p><strong>Principais:</strong> Python, Go, PHP, MySQL, RPA (Robotic Process Automation), JavaScript, Linux, Integração com sistemas legados.</p>
+    <p><strong>Principais:</strong> Python, Go, PHP, MySQL, RPA (Robotic Process Automation), Linux, Integração com sistemas legados, Arquitetura de robôs distribuídos.</p>
 
-    <a href="https://github.com/seuusuario" class="btn" target="_blank">Ver GitHub</a>
-    <a href="#" class="btn" style="background:#334155; margin-left: 10px;">Contato</a>
+    <a href="https://github.com/max9ower" class="btn" target="_blank">Ver GitHub</a>
+    <a href="#" class="btn btn-secondary" style="margin-left: 12px;">Contato</a>
   </div>
 </body>
 </html>
